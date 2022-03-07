@@ -91,6 +91,9 @@ class GcpFind():
             # load GCP coords
             self.coo_input()
 
+        if self.args.verbose:
+            print(f"Using dictionnary {self.list_dicts()[args.dict][1]}")
+
         # lookup table for color correction
         self.lut = np.interp(np.arange(0, 256), self.LUT_IN,
                              self.LUT_OUT).astype(np.uint8)
