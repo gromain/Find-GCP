@@ -449,7 +449,13 @@ if __name__ == "__main__":
     T1 = time.perf_counter()
     # set up command line argument parser
     params = aruco.DetectorParameters_create()
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+The format of the markerstyle parameters is a string of characters whose description can be found in the Notes section at https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#codecell9 .
+For more information on the various parameters related to the marker detection, please see https://docs.opencv.org/trunk/d5/dae/tutorial_aruco_detection.html .
+""",
+    )
     cmd_params(parser, params)
     # parse command line arguments
     args = parser.parse_args()
