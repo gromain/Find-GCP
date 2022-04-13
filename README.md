@@ -23,7 +23,7 @@ Clone the Find-GCP GitHub repo or download the zip file
 git clone https://github.com/zsiki/Find-GCP.git
 ```
 
-or 
+or
 
 ```
 wget https://github.com/zsiki/Find-GCP/archive/refs/heads/master.zip
@@ -221,7 +221,7 @@ This small program lists GPS position from exif information of images to the sta
 Usage: ./exif_pos.py image_file(s)
 
 ```
- 
+
 Sample output of the program:
 
 ```
@@ -264,7 +264,7 @@ optional arguments:
   -p PAD, --pad PAD     border width around marker in inches, default= 0.5
 ```
 
-You can also use Romain Basile's [GCP Aruco Marker Generator](https://github.com/gromain/gcp_aruco_generator) to get SVG markers.
+You can also use Romain Bazile's [GCP Aruco Marker Generator](https://github.com/gromain/gcp_aruco_generator) to get SVG markers.
 
 #### gcp\_check.py
 
@@ -420,11 +420,11 @@ Marker 4 was not detected.
 
 ### Sample 4
 
-Photos (DJI\_0180.jpg and DJI\_0181.jpg) made by DJI Phantom 4 Pro, flying alttitude 50 m. There are eight 3x3 black/grey GCPs on image DJI\_0180.png and ten on 
+Photos (DJI\_0180.jpg and DJI\_0181.jpg) made by DJI Phantom 4 Pro, flying alttitude 50 m. There are eight 3x3 black/grey GCPs on image DJI\_0180.png and ten on
 DJI\_0181.png.
 
 ```
-python3 gcp_find.py -d 99 --minrate 0.01 --ignore 0.33 samples/bme/DJI_018[01].jpg 
+python3 gcp_find.py -d 99 --minrate 0.01 --ignore 0.33 samples/bme/DJI_018[01].jpg
 3 3458 3251 DJI_0180.jpg
 4 2700 3229 DJI_0180.jpg
 2 2981 2414 DJI_0180.jpg
